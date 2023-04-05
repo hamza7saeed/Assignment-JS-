@@ -1,0 +1,32 @@
+var person = {
+    firstName: "John",
+    lastName: "David",
+    Age: "25",
+    Email: "JohnDav123@gmail.com",
+    Adress: {
+        street: "Holmus street",
+        city: "New Jersy",
+        state: "United State",
+        Zip_code: 123445,
+    },
+    
+};
+
+
+console.log(person);
+delete person.firstName
+delete person.lastName
+console.log(person);
+
+1- full Name
+person.fullName = "John David"
+//console.log(person);
+
+ 2 Up-date Email.
+person.Email = "JohanDavaid77@yahoo.com";
+//console.log(person);
+
+3 up-date Adress
+
+person.Adress = "Holmus street, New Jersey, United State of America, 123445"
+console.log(person);
