@@ -1,0 +1,20 @@
+function uniqCities(person:{name: string, city: string}[]){
+    let cities =  ["New York", "Sydeny", "London"]
+
+   person.forEach((W, index) => {
+    if (index < cities.length){
+        W.city = cities[index]
+    }
+   
+   });
+   return person; 
+}
+
+let person = [
+    {name: "Hamza", city: "Karachi"},
+    {name: "Umer", city: "Lahore"},
+    {name: "Ali", city: "Multan"},
+];
+
+let xyz = uniqCities(person);
+console.log(xyz);
